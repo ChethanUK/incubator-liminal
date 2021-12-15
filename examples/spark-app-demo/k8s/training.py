@@ -33,8 +33,6 @@ _PRODUCTION_MODEL_STORE = ModelStore(model_store.PRODUCTION)
 import argparse
 import csv
 
-import numpy as np
-
 
 def load_iris_from_csv_file(f):
     df = pd.read_csv(f, header=0).reset_index(drop=True)
