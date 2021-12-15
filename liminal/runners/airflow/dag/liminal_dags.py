@@ -17,8 +17,6 @@
 # under the License.
 import traceback
 
-from airflow import DAG
-
 import liminal.runners.airflow.dag as liminal
 
 pipelines = liminal.register_dags()

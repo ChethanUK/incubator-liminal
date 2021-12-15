@@ -16,14 +16,13 @@
 # specific language governing permissions and limitations
 # under the License.
 import os
-import sys
 import time
 
 import model_store
 import numpy as np
 import pandas as pd
 from model_store import ModelStore
-from sklearn import datasets, model_selection
+from sklearn import model_selection
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 
@@ -31,7 +30,6 @@ _CANDIDATE_MODEL_STORE = ModelStore(model_store.CANDIDATE)
 _PRODUCTION_MODEL_STORE = ModelStore(model_store.PRODUCTION)
 
 import argparse
-import csv
 
 import numpy as np
 

@@ -157,6 +157,18 @@ repos:
         # override until resolved: https://github.com/psf/black/issues/402
         types: []
 
+  - repo: https://github.com/myint/autoflake
+    rev: v1.4
+    hooks:
+      - id: autoflake
+        exclude: &fixtures tests/functional/|tests/
+        args:
+          - --in-place
+          - --remove-all-unused-imports
+          - --expand-star-imports
+          - --remove-duplicate-keys
+          - --remove-unused-variables
+
   # - repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
   #   rev: 0.1.0
   #   hooks:
